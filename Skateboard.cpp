@@ -27,7 +27,7 @@ double Skateboard::mileageEstimate(double min) {
     // Note, this condition was unclear in the instructions. Choose to place
     // condition on the parameter time.
     if(min > 25 && min < 250) {
-        double randTimeAdded = rand() % (int)(((1.0/3.0) * min) + 1);
+        double randTimeAdded = rand() % (int)((1.0/3.0) * min) + 1;
         milage += milage + randTimeAdded;
     }
 
