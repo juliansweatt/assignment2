@@ -1,8 +1,11 @@
-main.x: main.o PoweredVehicle.o Vehicle.o Car.o Bicycle.o Jet.o Skateboard.o
-	g++ -o main.x main.o PoweredVehicle.o Vehicle.o Car.o Bicycle.o Jet.o Skateboard.o  -std=gnu++11
+main.x: main.o PoweredVehicle.o Vehicle.o Car.o Bicycle.o Jet.o Skateboard.o Scooter.o
+	g++ -o main.x main.o PoweredVehicle.o Vehicle.o Car.o Bicycle.o Jet.o Skateboard.o Scooter.o  -std=gnu++11
 
 main.o: main.cpp
 	g++ -c main.cpp -std=gnu++11
+
+Scooter.o: Scooter.cpp Scooter.h Vehicle.o
+	gcc -c Scooter.cpp -std=gnu++11
 
 Skateboard.o: Skateboard.cpp Skateboard.h Vehicle.o
 	gcc -c Skateboard.cpp -std=gnu++11
