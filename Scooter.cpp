@@ -3,11 +3,13 @@
 Scooter::Scooter() {
     setBrand("Custom");
     setModel("unknown");
+    setFuelType("electric");
 }
 
 Scooter::Scooter(string brand, string model) {
     setBrand(brand);
     setModel(model);
+    setFuelType("electric");
 }
 
 Scooter::~Scooter() = default;
