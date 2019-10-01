@@ -16,6 +16,19 @@ Jet::Jet(string brand, string model, int numEngines) {
     setNumberOfEngines(numEngines);
 }
 
+Jet::Jet(string brand, string model, string fuelType) {
+    setBrand(brand);
+    setModel(model);
+    setFuelType(fuelType);
+}
+
+Jet::Jet(string brand, string model, string fuelType, int numEngines) {
+    setBrand(brand);
+    setModel(model);
+    setNumberOfEngines(numEngines);
+    setFuelType(fuelType);
+}
+
 int Jet::getNumberOfEngines() {
     return numberOfEngines;
 }

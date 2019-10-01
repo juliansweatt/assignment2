@@ -13,6 +13,8 @@ public:
 
     explicit Jet(string brand, string model);
     explicit Jet(string brand, string model, int numEngines);
+    explicit Jet(string brand, string model, string fuelType);
+    explicit Jet(string brand, string model, string fuelType, int numEngines);
 
     int getNumberOfEngines();
     void setNumberOfEngines(int numEngines);
