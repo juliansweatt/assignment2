@@ -10,10 +10,24 @@ Jet::Jet(string brand, string model) {
     setModel(model);
 }
 
+Jet::Jet(string brand, string model, int numEngines) {
+    setBrand(brand);
+    setModel(model);
+    setNumberOfEngines(numEngines);
+}
+
+int Jet::getNumberOfEngines() {
+    return numberOfEngines;
+}
+
+void Jet::setNumberOfEngines(int numEngines) {
+    numberOfEngines = numEngines;
+}
+
 Jet::~Jet() = default;
 
 string Jet::toString() {
-    return "-> Jet\n" + PoweredVehicle::toString();
+    return "-> Jet\n" + PoweredVehicle::toString()+ "\n\tEngine Quantity: " + to_string(getNumberOfEngines());
 }
 
 double Jet::mileageEstimate(double time) {

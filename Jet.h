@@ -6,12 +6,16 @@
 class Jet : public PoweredVehicle {
 
 private:
-    int numberOfEngines;
+    int numberOfEngines = 1;
 
 public:
     Jet();
 
     explicit Jet(string brand, string model);
+    explicit Jet(string brand, string model, int numEngines);
+
+    int getNumberOfEngines();
+    void setNumberOfEngines(int numEngines);
 
     virtual ~Jet();
     virtual string toString();
