@@ -66,4 +66,15 @@ To https://github.com/juliansweatt/assignment2.git
     needed to resolve conflicts, and reducing the complexity and size of merges. A centralized
     system would require large merges, potentially between developers who aren't involved in the
     development of the particular part of code their merge will affect. 
-    
+
+
+Part 5:
+Encapsulation and Polymorphism are both used throughout the driving simulator. For example,
+the Car class exhibits both properties. Polymorphism is used in the Car constructors, as there
+is a Car() constructor and a Car(string brand, string model, string fuelType, string engineSize)
+constructor. This allows Car to be constructed using default parameters or using explicitly
+defined parameters. Car also exhibits encapsulation in that internal data is accessed and set
+using helper functions. Notably, getEngineSize() and setEngineSize(string) are used rather than
+exposing the myEngineSize variable outside of the class. Encapsulating Car data ensures that it
+will only be accessed or altered in ways expected by the designer of the class. These concepts
+are used throughout the other classes in the driving simulator. 
